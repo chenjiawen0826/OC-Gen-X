@@ -21,6 +21,7 @@ struct platFormInfo: Codable {
 struct generic: Codable {
     var adviseWindows: Bool
     var mlb: String
+    var processorType: Int
     var rom: Data
     var spoofVendor: Bool
     var systemProductName: String
@@ -30,6 +31,7 @@ struct generic: Codable {
     enum CodingKeys: String, CodingKey {
         case adviseWindows = "AdviseWindows"
         case mlb = "MLB"
+        case processorType = "ProcessorType"
         case rom = "ROM"
         case spoofVendor = "SpoofVendor"
         case systemProductName = "SystemProductName"

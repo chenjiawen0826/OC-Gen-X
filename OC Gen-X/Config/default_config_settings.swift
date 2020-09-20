@@ -34,7 +34,7 @@ var config = Root(
            legacySchema: legacySchema(legacyAppleBootVariableGuid: ["EFILoginHiDPI", "EFIBluetoothDelay", "LocationServicesEnabled", "SystemAudioVolume", "SystemAudioVolumeDB", "SystemAudioVolumeSaved", "bluetoothActiveControllerInfo", "bluetoothInternalControllerInfo", "flagstate", "fmm-computer-name", "nvda_drv", "prev-lang:kbd"], legacyEfiGlobalVariable: ["Boot0080", "Boot0081", "Boot0082", "BootNext", "BootOrder"]),
            writeFlash: true),
                 
-    platFormInfo: platFormInfo(automatic: true, generic: generic(adviseWindows: false, mlb: "", rom: Data(), spoofVendor: true, systemProductName: "", systemSerialNumber: "", systemUUID: ""), updateDataHub: true, updateNVRAM: true, updateSMBIOS: true, updateSMBIOSMode: "Create"),
+    platFormInfo: platFormInfo(automatic: true, generic: generic(adviseWindows: false, mlb: "", processorType: 0, rom: Data(), spoofVendor: true, systemProductName: "", systemSerialNumber: "", systemUUID: ""), updateDataHub: true, updateNVRAM: true, updateSMBIOS: true, updateSMBIOSMode: "Create"),
                 
     uefi: uefi(apfs: apfs(enableJumpstart: true, globalConnect: false, hideVerbose: true, jumpstartHotPlug: false, minDate: 0, minVersion: 0),
           audio: audio(audioCodec: 0, audioDevice: "PciRoot(0x0)/Pci(0x1b,0x0)", audioOut: 0, audioSupport: false, minimumVolume: 20, playChime: false, volumeAmplifier: 0),
